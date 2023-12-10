@@ -10,7 +10,7 @@ def find_nums(l, r):
 
     for a in range(2, r):
         b = r - a
-        if l <= a + b <= r and gcd(a, b) != 1:
+        if l <= a + b <= r and gcd(a, b) != 1:   # if gcd(a, b) > 1:
             return "Yes"
     
     return "No"
